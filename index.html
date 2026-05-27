@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Velvet Box | Premium Gifting & Luxury Decor</title>
-  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
   <!-- SEO Meta Tags -->
-  <meta name="description" content="The Velvet Box specializes in curated luxury hampers, elegant wedding favours, festive gifting, silver-plated treasures, and bespoke decor. Experience warm, warm, and aspirational gifting.">
-  <meta name="keywords" content="luxury gifting, bespoke hampers, wedding favours, corporate gifting, silver treasures, festive hampers, The Velvet Box">
+  <meta name="description"
+    content="The Velvet Box specializes in curated luxury hampers, elegant wedding favours, festive gifting, silver-plated treasures, and bespoke decor. Experience warm, warm, and aspirational gifting.">
+  <meta name="keywords"
+    content="luxury gifting, bespoke hampers, wedding favours, corporate gifting, silver treasures, festive hampers, The Velvet Box">
   <meta name="author" content="The Velvet Box">
-  
+
   <!-- Preconnect & Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
   <!-- FontAwesome Icons for Luxury Badges & Controls -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -31,19 +39,21 @@
       --color-ivory: #F5EFE6;
       --color-rose: #E8C8C0;
       --color-bg-dark: #110515;
-      
+
       --font-serif: 'Cormorant Garamond', serif;
       --font-sans: 'Lato', sans-serif;
-      
+
       --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
       --transition-fast: all 0.3s ease;
-      
+
       --shadow-luxury: 0 20px 40px rgba(0, 0, 0, 0.45);
       --shadow-inset-gold: inset 0 0 15px rgba(201, 168, 76, 0.15);
     }
 
     /* Reset & Base Styles */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -74,14 +84,17 @@
     ::-webkit-scrollbar {
       width: 10px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--color-bg-dark);
     }
+
     ::-webkit-scrollbar-thumb {
       background: linear-gradient(var(--color-burgundy), var(--color-plum));
       border: 2px solid var(--color-bg-dark);
       border-radius: 5px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: var(--color-gold);
     }
@@ -144,7 +157,12 @@
     /* ----------------------------------------------------
        TYPOGRAPHY STYLES
        ---------------------------------------------------- */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: var(--font-serif);
       font-weight: 400;
       letter-spacing: 0.05em;
@@ -227,6 +245,22 @@
       right: 2px;
       bottom: 2px;
       border: 1px solid rgba(201, 168, 76, 0.2);
+    }
+
+    .nav-logo-img {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--color-gold);
+      border-radius: 4px;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-inset-gold);
+    }
+
+    .nav-logo:hover .nav-logo-img {
+      transform: scale(1.08);
+      border-color: var(--color-gold-light);
+      box-shadow: 0 0 15px rgba(201, 168, 76, 0.4);
     }
 
     .nav-logo-text {
@@ -356,8 +390,15 @@
     }
 
     @keyframes float-glow {
-      0% { transform: translateY(0) scale(1); opacity: 0.7; }
-      100% { transform: translateY(-30px) scale(1.15); opacity: 1; }
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: translateY(-30px) scale(1.15);
+        opacity: 1;
+      }
     }
 
     .hero-subtitle {
@@ -380,28 +421,28 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-bottom: 2rem;
-      background: linear-gradient(
-        90deg,
-        #C9A84C 0%,
-        #F5EFE6 25%,
-        #C9A84C 50%,
-        #F5EFE6 75%,
-        #C9A84C 100%
-      );
+      background: linear-gradient(90deg,
+          #C9A84C 0%,
+          #F5EFE6 25%,
+          #C9A84C 50%,
+          #F5EFE6 75%,
+          #C9A84C 100%);
       background-size: 200% auto;
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: shine 5s linear infinite;
-      filter: drop-shadow(0 4px 15px rgba(0,0,0,0.5));
+      filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
       opacity: 0;
       transform: translateY(30px);
       animation: fade-in-up-custom 1.2s 0.4s forwards cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     @keyframes shine {
-      to { background-position: 200% center; }
+      to {
+        background-position: 200% center;
+      }
     }
 
     .hero-tagline {
@@ -506,16 +547,28 @@
     }
 
     @keyframes mouse-scroll {
-      0% { top: 6px; opacity: 1; }
-      100% { top: 22px; opacity: 0; }
+      0% {
+        top: 6px;
+        opacity: 1;
+      }
+
+      100% {
+        top: 22px;
+        opacity: 0;
+      }
     }
 
     @keyframes fade-in-up-custom {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fade-in-indicator {
-      to { opacity: 0.7; }
+      to {
+        opacity: 0.7;
+      }
     }
 
     /* ----------------------------------------------------
@@ -562,7 +615,7 @@
     .ornate-flourish svg {
       width: 130px;
       height: auto;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
 
     .about-statement {
@@ -621,7 +674,7 @@
       cursor: pointer;
       backdrop-filter: blur(8px);
       transition: var(--transition-fast);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     .filter-btn:hover {
@@ -667,12 +720,10 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.08),
-        transparent
-      );
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.08),
+          transparent);
       transition: 0.6s ease;
       z-index: 3;
       pointer-events: none;
@@ -745,13 +796,18 @@
     .fallback-emoji {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
       animation: float-emoji 3s ease-in-out infinite alternate;
     }
 
     @keyframes float-emoji {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-8px); }
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-8px);
+      }
     }
 
     .fallback-brand {
@@ -1061,6 +1117,22 @@
       border: 1px solid rgba(201, 168, 76, 0.2);
     }
 
+    .footer-logo-img {
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--color-gold);
+      border-radius: 4px;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-inset-gold);
+    }
+
+    .footer-brand:hover .footer-logo-img {
+      transform: scale(1.08);
+      border-color: var(--color-gold-light);
+      box-shadow: 0 0 15px rgba(201, 168, 76, 0.4);
+    }
+
     .footer-brand-title {
       font-family: var(--font-serif);
       font-size: 1.8rem;
@@ -1253,9 +1325,17 @@
     }
 
     @keyframes pulse-ring {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5), 0 8px 30px rgba(0, 0, 0, 0.4); }
-      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0), 0 8px 30px rgba(0, 0, 0, 0.4); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 30px rgba(0, 0, 0, 0.4); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5), 0 8px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0), 0 8px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 30px rgba(0, 0, 0, 0.4);
+      }
     }
 
     /* ----------------------------------------------------
@@ -1291,14 +1371,17 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
       }
+
       .why-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
       }
+
       .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      .testimonials-grid > *:last-child {
+
+      .testimonials-grid>*:last-child {
         grid-column: span 2;
         max-width: 50%;
         margin: 0 auto;
@@ -1309,26 +1392,34 @@
       .navbar {
         padding: 1.25rem 2rem;
       }
+
       .navbar.scrolled {
         padding: 0.85rem 2rem;
       }
+
       .nav-links {
-        display: none; /* JavaScript will handle active drawer */
+        display: none;
+        /* JavaScript will handle active drawer */
       }
+
       .nav-cta {
         display: none;
       }
+
       .menu-toggle {
         display: block;
       }
+
       .about-card {
         padding: 3.5rem 2rem;
       }
+
       .footer-content {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
-      .testimonials-grid > *:last-child {
+
+      .testimonials-grid>*:last-child {
         grid-column: span 1;
         max-width: 100%;
       }
@@ -1338,23 +1429,28 @@
       html {
         font-size: 15px;
       }
+
       .catalogue-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
       }
+
       .why-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
       }
+
       .testimonials-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
       }
+
       .footer-bottom {
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
       }
+
       .whatsapp-floater {
         bottom: 1.5rem;
         right: 1.5rem;
@@ -1379,7 +1475,7 @@
       flex-direction: column;
       gap: 3rem;
       border-left: 1px solid rgba(201, 168, 76, 0.2);
-      box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
       transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -1446,13 +1542,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(4px);
       z-index: 199;
       display: none;
     }
   </style>
 </head>
+
 <body>
 
   <!-- LAYERED TEXTURES AND BACKGROUND GLOWS -->
@@ -1464,10 +1561,10 @@
   <!-- NAVIGATION HEADER -->
   <header class="navbar" id="navbar">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-monogram">VB</div>
+      <img src="logo.jpg" alt="The Velvet Box Logo" class="nav-logo-img">
       <span class="nav-logo-text">The Velvet Box</span>
     </a>
-    
+
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#catalogue">Catalogue</a></li>
@@ -1494,7 +1591,8 @@
       <li><a href="#why-choose-us" class="mobile-link">Why Us</a></li>
       <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
     </ul>
-    <a href="https://wa.me/8443973697?text=Hi!%20I'm%20interested%20in%20luxurious%20gifting%20services%20from%20The%20Velvet%20Box.%20Could%20we%20connect%3F" target="_blank" class="mobile-cta">Connect on WhatsApp</a>
+    <a href="https://wa.me/8443973697?text=Hi!%20I'm%20interested%20in%20luxurious%20gifting%20services%20from%20The%20Velvet%20Box.%20Could%20we%20connect%3F"
+      target="_blank" class="mobile-cta">Connect on WhatsApp</a>
   </div>
 
   <!-- HERO SECTION -->
@@ -1503,12 +1601,13 @@
     <span class="hero-subtitle">The Velvet Box</span>
     <h1 class="gold-shimmer-text">Unwrap Elegance</h1>
     <p class="hero-tagline">
-      Crafting ultra-premium personalised hampers, wedding favours, festive gifting collections, silver-plated treasures, and luxury decor.
+      Crafting ultra-premium personalised hampers, wedding favours, festive gifting collections, silver-plated
+      treasures, and luxury decor.
     </p>
     <a href="#catalogue" class="hero-cta">
       Explore Our Collections <i class="fa-solid fa-chevron-down"></i>
     </a>
-    
+
     <div class="scroll-indicator">
       <span>Scroll</span>
       <div class="scroll-indicator-mouse">
@@ -1529,9 +1628,11 @@
           <circle cx="65" cy="5" r="1.2" fill="#C9A84C" />
         </svg>
       </div>
-      
+
       <p class="about-statement">
-        At <span>The Velvet Box</span>, we believe that premium gifting is an art form. Every detail is curated to weave a narrative of elegance, warmth, and aspirational luxury. From handpicked treasures to bespoke customisation, we craft keepsakes that turn moments into enduring heirloom memories.
+        At <span>The Velvet Box</span>, we believe that premium gifting is an art form. Every detail is curated to weave
+        a narrative of elegance, warmth, and aspirational luxury. From handpicked treasures to bespoke customisation, we
+        craft keepsakes that turn moments into enduring heirloom memories.
       </p>
 
       <div class="ornate-flourish">
@@ -1575,7 +1676,8 @@
           <i class="fa-solid fa-gem"></i>
         </div>
         <h3 class="why-title">Bespoke Design</h3>
-        <p class="why-desc">Tailored curations created specifically to express your distinct style, colors, and event themes.</p>
+        <p class="why-desc">Tailored curations created specifically to express your distinct style, colors, and event
+          themes.</p>
       </div>
 
       <!-- Badge 2: Premium -->
@@ -1584,7 +1686,8 @@
           <i class="fa-solid fa-crown"></i>
         </div>
         <h3 class="why-title">Premium Quality</h3>
-        <p class="why-desc">Strictly handpicked luxury contents, opulent presentation boxes, and a flawless gold-standard finish.</p>
+        <p class="why-desc">Strictly handpicked luxury contents, opulent presentation boxes, and a flawless
+          gold-standard finish.</p>
       </div>
 
       <!-- Badge 3: Delivery -->
@@ -1593,7 +1696,8 @@
           <i class="fa-solid fa-truck-fast"></i>
         </div>
         <h3 class="why-title">Pan-India Delivery</h3>
-        <p class="why-desc">Expertly packed to ensure safe transit, carrying your warm feelings seamlessly to any doorstep across India.</p>
+        <p class="why-desc">Expertly packed to ensure safe transit, carrying your warm feelings seamlessly to any
+          doorstep across India.</p>
       </div>
 
       <!-- Badge 4: Personalised -->
@@ -1602,7 +1706,8 @@
           <i class="fa-solid fa-heart-circle-check"></i>
         </div>
         <h3 class="why-title">Personalised Touch</h3>
-        <p class="why-desc">Elegant customized monograms, handwritten letters, and thoughtful embellishments that show genuine care.</p>
+        <p class="why-desc">Elegant customized monograms, handwritten letters, and thoughtful embellishments that show
+          genuine care.</p>
       </div>
     </div>
   </section>
@@ -1617,7 +1722,8 @@
       <div class="testimonial-card stagger-reveal">
         <i class="fa-solid fa-quote-left quote-icon"></i>
         <p class="testimonial-text">
-          "The hampers for our wedding were absolutely breathtaking! Every single guest couldn't stop praising the elegant packaging and the sheer quality of the handpicked silver treasures inside. Incredible craftsmanship!"
+          "The hampers for our wedding were absolutely breathtaking! Every single guest couldn't stop praising the
+          elegant packaging and the sheer quality of the handpicked silver treasures inside. Incredible craftsmanship!"
         </p>
         <h4 class="testimonial-author">Aishwarya & Rahul</h4>
         <p class="testimonial-role">Wedding Client, Mumbai</p>
@@ -1627,7 +1733,8 @@
       <div class="testimonial-card stagger-reveal">
         <i class="fa-solid fa-quote-left quote-icon"></i>
         <p class="testimonial-text">
-          "For our corporate Diwali gifts, The Velvet Box delivered absolute perfection. They managed customization for 200 clients seamlessly. It felt professional, yet deeply personal and extremely premium."
+          "For our corporate Diwali gifts, The Velvet Box delivered absolute perfection. They managed customization for
+          200 clients seamlessly. It felt professional, yet deeply personal and extremely premium."
         </p>
         <h4 class="testimonial-author">Aditya Sen</h4>
         <p class="testimonial-role">TechVanguard Corp, Bangalore</p>
@@ -1637,7 +1744,8 @@
       <div class="testimonial-card stagger-reveal">
         <i class="fa-solid fa-quote-left quote-icon"></i>
         <p class="testimonial-text">
-          "I ordered custom home decor hampers for a housewarming. The aroma candles, gorgeous marble platters, and gold embellishments were stunning. It truly illuminated the house. Excellent customer experience!"
+          "I ordered custom home decor hampers for a housewarming. The aroma candles, gorgeous marble platters, and gold
+          embellishments were stunning. It truly illuminated the house. Excellent customer experience!"
         </p>
         <h4 class="testimonial-author">Meera Kapoor</h4>
         <p class="testimonial-role">Decor Patron, Delhi</p>
@@ -1648,15 +1756,16 @@
   <!-- FOOTER -->
   <footer class="footer id-anchor" id="contact">
     <div class="footer-content reveal">
-      
+
       <!-- Brand column -->
       <div class="footer-about-col">
         <div class="footer-brand">
-          <div class="footer-logo">VB</div>
+          <img src="logo.jpg" alt="The Velvet Box Logo" class="footer-logo-img">
           <span class="footer-brand-title">The Velvet Box</span>
         </div>
         <p class="footer-desc">
-          Crafting bespoke hampers, corporate gifts, wedding favours, and luxury decor that communicate warmth, joy, and uncompromising sophistication. We turn the act of gifting into an unforgettable milestone.
+          Crafting bespoke hampers, corporate gifts, wedding favours, and luxury decor that communicate warmth, joy, and
+          uncompromising sophistication. We turn the act of gifting into an unforgettable milestone.
         </p>
         <a href="https://instagram.com/hampers_gifts_decor_and_more" target="_blank" class="footer-instagram-link">
           <i class="fa-brands fa-instagram"></i> @hampers_gifts_decor_and_more
@@ -1677,24 +1786,29 @@
       <!-- Contact column -->
       <div class="footer-contact-col">
         <h4 class="footer-title">Inquire Directly</h4>
-        
+
         <div class="footer-contact-item">
           <i class="fa-solid fa-envelope"></i>
           <div>
-            <p style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--color-rose); margin-bottom: 0.15rem;">Email Us</p>
-            <a href="mailto:info.thevelvetbox@gmail.com">info.thevelvetbox@gmail.com</a>
+            <p
+              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--color-rose); margin-bottom: 0.15rem;">
+              Email Us</p>
+            <a href="mailto:thevelvetbox.query@gmail.com">thevelvetbox.query@gmail.com</a>
           </div>
         </div>
 
         <div class="footer-contact-item">
           <i class="fa-solid fa-phone"></i>
           <div>
-            <p style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--color-rose); margin-bottom: 0.15rem;">WhatsApp & Phone</p>
+            <p
+              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--color-rose); margin-bottom: 0.15rem;">
+              WhatsApp & Phone</p>
             <a href="tel:+918443973697">+91 84439 73697</a>
           </div>
         </div>
 
-        <a href="https://wa.me/8443973697?text=Hi!%20I'm%20inquiring%20about%20your%20premium%20gifting%20collections%20and%20would%20love%20to%20explore%20options.%20Could%20we%20connect%3F" target="_blank" class="footer-contact-btn">
+        <a href="https://wa.me/8443973697?text=Hi!%20I'm%20inquiring%20about%20your%20premium%20gifting%20collections%20and%20would%20love%20to%20explore%20options.%20Could%20we%20connect%3F"
+          target="_blank" class="footer-contact-btn">
           <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
         </a>
       </div>
@@ -1703,16 +1817,17 @@
 
     <!-- Copyright strip -->
     <div class="footer-bottom">
-      <p>© 2026 The Velvet Box. All Rights Reserved. Crafted for sophisticated impressions.</p>
-      
+      <p>Created with ❤️ by Ishan Somani.</p>
+
       <div class="social-icons-row">
-        <a href="https://instagram.com/hampers_gifts_decor_and_more" target="_blank" class="social-icon" aria-label="Instagram">
+        <a href="https://instagram.com/hampers_gifts_decor_and_more" target="_blank" class="social-icon"
+          aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://wa.me/8443973697" target="_blank" class="social-icon" aria-label="WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="mailto:info.thevelvetbox@gmail.com" class="social-icon" aria-label="Email">
+        <a href="mailto:thevelvetbox.query@gmail.com" class="social-icon" aria-label="Email">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
@@ -1720,7 +1835,8 @@
   </footer>
 
   <!-- FLOATING WHATSAPP CHAT BUTTON -->
-  <a href="https://wa.me/8443973697?text=Hi!%20I%20came%20across%20The%20Velvet%20Box%20website%20and%20would%20love%20to%20know%20more%20about%20your%20bespoke%20gifting%20services.%20Could%20we%20connect%3F" target="_blank" class="whatsapp-floater" aria-label="Quick WhatsApp Inquiry">
+  <a href="https://wa.me/8443973697?text=Hi!%20I%20came%20across%20The%20Velvet%20Box%20website%20and%20would%20love%20to%20know%20more%20about%20your%20bespoke%20gifting%20services.%20Could%20we%20connect%3F"
+    target="_blank" class="whatsapp-floater" aria-label="Quick WhatsApp Inquiry">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
@@ -1738,10 +1854,10 @@
     function handleImageError(imageElement) {
       const container = imageElement.closest('.card-image-wrapper');
       if (!container) return;
-      
+
       // Hide the default image element
       imageElement.style.display = 'none';
-      
+
       // Find the fallback container inside the wrapper and show it
       const fallbackContainer = container.querySelector('.image-fallback-placeholder');
       if (fallbackContainer) {
@@ -1785,7 +1901,7 @@
       menuToggle.addEventListener("click", openMenu);
       mobileMenuClose.addEventListener("click", closeMenu);
       mobileMenuOverlay.addEventListener("click", closeMenu);
-      
+
       mobileLinks.forEach(link => {
         link.addEventListener("click", closeMenu);
       });
@@ -1793,7 +1909,7 @@
       // 4. DYNAMIC CATALOG LOADER & RENDERING
       const renderCatalogue = (itemsToRender) => {
         catalogueGrid.innerHTML = "";
-        
+
         if (itemsToRender.length === 0) {
           catalogueGrid.innerHTML = `
             <div style="grid-column: span 3; text-align: center; padding: 4rem 1rem; border: 1px dashed rgba(201,168,76,0.3); border-radius: 8px;">
@@ -1806,7 +1922,7 @@
         itemsToRender.forEach((item, index) => {
           const encodedMsg = encodeURIComponent(item.whatsapp_message);
           const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodedMsg}`;
-          
+
           const cardHtml = `
             <article class="catalogue-card reveal" style="transition-delay: ${index * 0.1}s;">
               <div class="card-image-wrapper">
@@ -1845,7 +1961,7 @@
       const setupFilterSystem = (items) => {
         // Collect all unique categories
         const categories = new Set(items.map(item => item.category));
-        
+
         // Dynamically add a button for each unique category
         categories.forEach(cat => {
           const pill = document.createElement("button");
@@ -1883,7 +1999,7 @@
             throw new Error(`HTTP Error! Status: ${response.status}`);
           }
           catalogItems = await response.json();
-          
+
           // Initialise components
           setupFilterSystem(catalogItems);
           renderCatalogue(catalogItems);
@@ -1909,7 +2025,7 @@
       // 6. SCROLL REVEAL (Intersection Observer)
       const observeScrollReveals = () => {
         const revealElements = document.querySelectorAll(".reveal, .stagger-reveal");
-        
+
         const observerOptions = {
           root: null, // Viewport
           threshold: 0.1, // Trigger when 10% is visible
@@ -1932,10 +2048,11 @@
 
       // Trigger catalogue load
       fetchCatalogueData();
-      
+
       // Initialize basic scroll reveals (for static elements like Hero, About, etc.)
       observeScrollReveals();
     });
   </script>
 </body>
+
 </html>
