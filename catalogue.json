@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Wedding Favours",
+    "emoji": "💍",
+    "description": "Elegant keepsake hampers and bespoke boxes crafted to make your special day truly unforgettable for your guests.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/wedding-favours.jpg",
+    "whatsapp_message": "Hi! I'm interested in Wedding Favours from The Velvet Box. Could you share more details about pricing and customisation options?"
+  },
+  {
+    "category": "Personalised Hampers",
+    "emoji": "🎁",
+    "description": "Curated gift hampers thoughtfully tailored to your loved ones' tastes, blending luxury delicacies, keepsakes, and warmth.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/personalised-hampers.jpg",
+    "whatsapp_message": "Hi! I'm looking to curate a Personalised Hamper from The Velvet Box. How can we get started on designing a custom gift?"
+  },
+  {
+    "category": "Festive Gifting",
+    "emoji": "🪔",
+    "description": "Celebrate auspicious moments with our opulent festive hampers, featuring handcrafted sweets, premium dry fruits, and artistic accessories.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/festive-gifting.jpg",
+    "whatsapp_message": "Hi! I'm interested in your Festive Gifting collection from The Velvet Box. Could you share the current brochure and pricing?"
+  },
+  {
+    "category": "Silver-plated Treasures",
+    "emoji": "✨",
+    "description": "Exquisite silver-plated tableware, ornamental platters, and heirloom-quality statement pieces that radiate timeless luxury.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/silver-treasures.jpg",
+    "whatsapp_message": "Hi! I'm interested in the Silver-plated Treasures collection from The Velvet Box. Do you have a catalogue of available designs?"
+  },
+  {
+    "category": "Corporate Gifting",
+    "emoji": "💼",
+    "description": "Express corporate appreciation and elevate your brand image with our ultra-premium corporate gift selections, custom-branded for your firm.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/corporate-gifting.jpg",
+    "whatsapp_message": "Hi! I'm inquiring about Corporate Gifting options at The Velvet Box. We'd love to explore options for our partners and team."
+  },
+  {
+    "category": "Luxury Decor",
+    "emoji": "🏺",
+    "description": "Sophisticated home accents, hand-poured wellness candles, and artisanal centrepieces designed to infuse elegance into any living space.",
+    "image": "https://res.cloudinary.com/the-velvet-box/image/upload/v1716912345/luxury-decor.jpg",
+    "whatsapp_message": "Hi! I'm interested in your Luxury Decor pieces from The Velvet Box. Could you share details on available collections?"
+  }
+]
